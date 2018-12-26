@@ -14,5 +14,10 @@ defmodule BikeShop.Bikes.Bike do
     bike
     |> cast(attrs, [:color])
     |> validate_required([:color])
+    |> validate_inclusion(:color, available_colors())
+  end
+
+  def available_colors do
+    ["red", "blue"]
   end
 end

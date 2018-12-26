@@ -7,7 +7,7 @@
 
   <div class="form-group">
     <%= label f, :color, class: "control-label" %>
-    <%= text_input f, :color, class: "form-control" %>
+    <%= select f, :color, BikeShop.Bikes.Bike.available_colors(), class: "form-control" %>
     <%= error_tag f, :color %>
   </div>
 
