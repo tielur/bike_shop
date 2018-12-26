@@ -1,0 +1,13 @@
+<h2>Show Bike</h2>
+
+<ul>
+
+  <li>
+    <strong>Color:</strong>
+    <%= @bike.color %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: bike_path(@conn, :edit, @bike) %></span>
+<span><%= link "Back", to: bike_path(@conn, :index) %></span>
